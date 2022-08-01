@@ -28,7 +28,7 @@ ul {
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background: #27ae60;
+  background: #01538e;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -116,10 +116,11 @@ img {
   border-radius: 50px;
   padding: 20px 40px;
   color: #27ae60;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
-  border: 5px solid #27ae601f;
-  background: #fff;
+  border: 1px solid #27ae601f;
+  background: #2a2a2a;
 }
 .back {
   height: 40vh;

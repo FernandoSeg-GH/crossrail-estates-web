@@ -4,7 +4,7 @@ import { list } from "../../data/Data"
 const RecentCard = () => {
   return (
     <>
-      <div className='content grid3 mtop'>
+      <div className='content grid3 mto mobile'>
         {list.map((val, index) => {
           const { cover, category, location, name, price, type } = val
           return (
@@ -32,6 +32,18 @@ const RecentCard = () => {
           )
         })}
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .mobile {
+            display: flex;
+            overflow-x: scroll;
+            margin: 0;
+            margin-top: 30px;
+            width: 100%;
+            padding: 0;
+          }
+        }
+      `}</style>
     </>
   )
 }

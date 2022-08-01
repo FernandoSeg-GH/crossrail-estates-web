@@ -10,7 +10,7 @@ const Awards = () => {
         <div className='container'>
           <Heading title='Over 1,24,000+ Happy User Bieng With Us Still They Love Our Services' subtitle='Our Awards' />
 
-          <div className='content grid4 mtop'>
+          <div className='content grid4 mto mobile'>
             {awards.map((val, index) => (
               <div className='box' key={index}>
                 <div className='icon'>
@@ -23,6 +23,23 @@ const Awards = () => {
           </div>
         </div>
       </section>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .mobile {
+            display: flex;
+            overflow-x: scroll;
+            margin: 0;
+            margin-top: 30px;
+            width: 100%;
+            padding: 0;
+          }
+          .box {
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          }
+        }
+      `}</style>
     </>
   )
 }

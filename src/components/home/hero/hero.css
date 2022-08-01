@@ -1,7 +1,8 @@
 .hero {
-  background-image: url("../../../../public/images/banner.png");
+  background-image: url("../../../../public/images/hero/header-banner2.png");
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.9;
   background-size: cover;
   height: 90vh;
   width: 100%;
@@ -51,6 +52,8 @@ form h4 {
 @media screen and (max-width: 800px) {
   .hero .container {
     padding-top: 30%;
+    height: auto;
+    padding-bottom: 30%;
   }
   form {
     display: flex;
